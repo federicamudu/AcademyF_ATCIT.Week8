@@ -1,0 +1,53 @@
+﻿<Window x:Class="AcademyF_ATCIT.Week8.FirstMiniApp.Views.SignIn.SignInView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademyF_ATCIT.Week8.FirstMiniApp.Views.SignIn"
+        mc:Ignorable="d"
+        Title="SignInView" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="300"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="1" Grid.Row="1" BorderBrush="BlueViolet" BorderThickness="3" CornerRadius="10">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="50"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="Authentication" FontSize="25" Foreground="DarkOrchid"></TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Center">Username: </Label>
+                </StackPanel>
+                <TextBox Grid.Row="2" Grid.Column="1">
+                    
+                </TextBox>
+                <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                    <Label VerticalAlignment="Center" HorizontalAlignment="Center">Password: </Label>
+                </StackPanel>
+                <TextBox Grid.Row="4" Grid.Column="1">
+
+                </TextBox>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
